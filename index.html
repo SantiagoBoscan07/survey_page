@@ -1,0 +1,119 @@
+<html>
+    <head>
+<style>
+    body{
+        font-family:fantasy;
+        text-align:center;
+        padding-left:20%;
+        padding-right:20%;
+        background-image:linear-gradient(
+      55deg,
+      rgba(134, 164, 196, 0.5),
+      rgba(64, 102, 143, 0.6)
+    ),
+        url(background.jpg);
+        background-attachment:fixed;
+    }
+    
+    label{
+        font-size:16px;
+    }
+    p{
+        font-size:20px;
+    }
+    h1{
+        font-size:36px;
+        background-color:hsla(191, 49%, 77%, 0.8);
+        border: 2px solid black;
+        padding:20px 20px 20px 20px;
+    }
+    #description{
+        background-color:hsla(191, 49%, 77%, 0.8);
+        border: 2px solid black;
+        padding:20px 20px 20px 20px;
+    }
+    form{
+        background-color:hsla(191, 49%, 77%, 0.6);
+        border: 2px solid black;
+        padding:20px 20px 20px 20px;
+    }
+    input{
+        display:inline-block;
+    }
+    #name{
+        width:100%;
+    }
+    #email{
+        width:100%;
+    }
+    textarea{
+        display:inline-block;
+        width:100%;
+    }
+    .submit-button{
+        display:inline-block;
+        width:100%;
+        background:#4c52c7;
+        color:inherit;
+        border-radius:12px;
+        cursor:pointer;
+        padding:0.75rem;
+        font-family:fantasy;
+        font-size:20px;
+        transition-duration:0.4s;
+    }
+    .submit-button:hover{
+        background-color:#5471a1;
+        color:white;
+    }
+</style>
+    </head>
+    <body>
+        <h1 id="title">What Is Your Favorite Videogame?</h1>
+        <p id="description">In this quick survey you will tell us about a game that changed your life. </p>
+        <form id="survey-form">
+            <label id="name-label">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="First Name"></input><br>
+            <label id="email-label">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Email Address"></input><br>
+            <label id="number-label">Age:</label><br>
+            <input type="number" name="number" id="number" min="0" max="100" required placeholder="Age #"></input><br>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label><br>
+<p>Favorite Platform:</p>
+<select id="dropdown" name="platform" required> 
+    <option value="Playstation">Playstation</option>
+    <option value="Switch">Switch</option>
+    <option value="Xbox">Xbox</option>
+    <option value="PC">PC</option>
+    <option value="other">Other</option>
+</select><br>
+<p>Favorite Genre:</p>
+<input type="checkbox" id="genre" name="genre1" value="Action">
+<label for="genre1">Action</label><br>
+<input type="checkbox" id="genre" name="genre2" value="Adventure">
+<label for="genre2">Adventure</label><br>
+<input type="checkbox" id="genre" name="genre3" value="RPG">
+<label for="genre3">RPG</label><br>
+<input type="checkbox" id="genre" name="genre4" value="Simulation">
+<label for="genre4">Simulation</label><br>
+<input type="checkbox" id="genre" name="genre5" value="Strategy">
+<label for="genre5">Strategy</label><br>
+<input type="checkbox" id="genre" name="genre6" value="Sports">
+<label for="genre6">Sports</label><br>
+<input type="checkbox" id="genre" name="genre7" value="Other">
+<label for="genre7">Other</label><br>
+<p>Favorite Videogame:</p>
+<textarea placeholder="Type the title here" required></textarea><br>
+<p>Additional Comments (Optional):</p>
+<textarea placeholder="Additional Comments"></textarea><br>
+<br>
+            <input id="submit" type="submit" class="submit-button"></input>
+        </form>
+    </body>
+</html>
